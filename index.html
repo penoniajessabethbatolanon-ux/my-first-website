@@ -268,7 +268,115 @@
         padding: 25px 18px;
       }
     }
-  </style>
+    
+/* My Pink World - Elegant Pink Redesign */
+:root {
+  --pink: #d96b91;
+  --soft-pink: #fff0f5;
+  --cream: #fffaf7;
+  --dark-pink: #8e3b5b;
+  --text-color: #57434b;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: linear-gradient(180deg, #fff0f5 0%, #fffaf7 55%, #ffe4ec 100%);
+  color: var(--text-color);
+  font-family: "Georgia", serif;
+  line-height: 1.8;
+}
+
+header {
+  background: rgba(255, 250, 247, 0.96);
+  box-shadow: 0 4px 20px rgba(195, 91, 130, 0.12);
+}
+
+nav a {
+  color: var(--dark-pink);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--pink);
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+section h2,
+section h3 {
+  color: var(--dark-pink);
+}
+
+.profile-photo {
+  border: 5px solid #fffaf7;
+  box-shadow: 0 8px 25px rgba(195, 91, 130, 0.22);
+}
+
+button,
+a.button {
+  background: var(--pink);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 22px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.button:hover,
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(195, 91, 130, 0.22);
+}
+
+.about-card,
+.contact-card,
+.cards {
+  border-radius: 20px;
+}
+
+.about-card,
+.contact-card {
+  background: rgba(255, 250, 247, 0.9);
+  border: 1px solid #f7d5e1;
+  box-shadow: 0 8px 24px rgba(195, 91, 130, 0.08);
+}
+
+footer {
+  background: #f8dce6;
+  color: var(--dark-pink);
+  text-align: center;
+  padding: 24px 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .profile-photo {
+    max-width: 130px;
+    height: 130px;
+  }
+
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+  </style> 
 </head>
 
 <body>
